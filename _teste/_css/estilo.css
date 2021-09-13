@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 221px;
+}
+body{
+    background-color: white;
+}
+    
+    h1 {
+        font-family: 'Otomanopee One', sans-serif;
+        font-size: 40pt;
+        color: black;
+        text-shadow: 1px 1px 2px rgb(158, 46, 46);
+        margin-block: -21px;
+    }
+
+    h2 {
+        font-family: 'Finger Paint', cursive;
+        color: rgb(158, 46, 46);
+        text-indent: 50px;
+      
+    }
+ h3{
+    font-family: 'Finger Paint', cursive;
+    font-size: 12pt;
+    margin-left: 63px;
+ }
+    
+    div#interface{
+        width: 1180px;
+        background: url("../_imagens/_fundo.jpg");  
+        margin: -20px auto 0px auto;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0,.5);
+        padding: 10px;
+    }
+/* Formatação de imagens com legendas */
+figure.foto-legenda{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    text-transform: uppercase;
+    
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position:absolute ;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+/* formatação do menu*/
+nav#menu{
+    display: block;
+
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position:absolute;
+    top: -20px;
+    left: 770px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: rgb(158, 46, 46);
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu li:hover{
+    background-color: rgb(78, 46, 46)
+
+}   
+nav#menu h1 {
+    display: none;
+}
+nav#menu a{
+    color: #000000;
+    text-decoration: none;
+    
+}
+nav#menu a:hover{
+    color: white;
+    
+
+}
+    
